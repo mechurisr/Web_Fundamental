@@ -1,0 +1,39 @@
+<!--step03_function1.html-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Function</title>
+        <script>
+            //생성자 함수
+            const Student = function(name, korean, math) {
+                this.name = name;
+                this.korean = korean;
+                this.math = math;
+                this.getSum = function() {
+                    returm this.korea + this.math
+                }
+            }
+
+            const s1 = new Student('성영한,90,90');
+            console.log(s1.name);
+            console.log(s1.getSum());
+            console.log(typeof s1);
+
+            const Student = {
+                "name" : "성영한",
+                "korean" : 90,
+                "math" : 90,
+                "getSum" : function() {
+                    return this.korean + this.math;
+                }
+            }
+
+            
+        </script> 
+    </head>
+    <body>
+        
+    </body>
+    </html>
